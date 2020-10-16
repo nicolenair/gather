@@ -61,6 +61,8 @@ Then run devserver from project root directory:
 $ turbo devserver
 ```
 
+Once you run turbo devserver, you can use and navigate & use the app at localhost:3000
+
 To build for production, run build:
 
 ```
