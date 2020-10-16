@@ -1,0 +1,265 @@
+.projects{
+  padding-left: 3%;
+  padding-right: 5%;
+  width:100%
+}
+
+.navbar{
+  width: 100%;
+  padding: 20px 0 10px 0;
+  margin: 0;
+
+  position: sticky;
+  top: 0 ;
+  background-color: #F8F9FB;
+  z-index: 1;
+}
+  
+.navbar-filter {
+  margin: 0 40px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* NavBar  
+.navbar {
+  width: 100%;
+  top: 0 ;
+  padding: 50px 0 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: left;
+  display: inline-block;
+  background-color: #F8F9FB;
+
+  vertical-align: middle;
+}
+.navbar ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  vertical-align: middle;
+  display:inline-block;
+  width: 100%
+}
+.navbar li{
+  border: 1px dotted black; /* Just to illustrate height 
+  vertical-align: middle;
+}
+.navbar-filters{
+  display: inline-block;
+}
+.navbar-filter{
+  font-size: 16px;
+  font-weight: 500;
+  float: left;
+  margin: 0 30px;
+}
+.profile{
+  float: right;
+  top: -10px;
+}
+.profile-pic{
+  vertical-align: middle;
+}
+/*
+.nav-link,
+.profile {
+  color: #000000;
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.nav-link {
+  margin: 0 25px;
+  font-size: 16px;
+}
+.nav-link:hover{
+  color: #000000;
+}
+.nav-link:hover + .underline{
+  display:block;
+}
+
+
+/* Hover underline animation */
+.navbar .underline-from-center {
+  position: relative;
+}
+.navbar .underline-from-center::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 0.001rem);
+  border-bottom: 0.125rem solid #000000;
+  left: 50%;
+  right: 50%;
+}
+.navbar .underline-from-center:hover::after {
+  left: 0;
+  right: 0;
+}
+/**/ 
+
+.navbar-sort{
+  font-size: 12px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px 8px 4px 13px;
+  cursor: pointer;
+  float: right;
+  
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.profile{
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-pic{
+  height: 45px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.profile-menu{
+  position: absolute;
+z-index: 100;
+background-color: white;
+right: 10px;
+
+margin-top: 10px;
+}
+.profile-menu button{
+  display:block;
+  padding: 5px 10px ;
+  width: 100px;
+  text-align: left;
+  font-size: 14px;
+}
+.profile-menu button:hover{
+background-color: rgb(220, 220, 220);
+}
+
+.project-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-left: 1%;
+
+  user-select: none;          /* Likely future */   
+}
+
+.project-all:after {
+  content: '';
+  max-height: 1px;
+  width: 776px
+}
+
+.project-add{
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 5px dashed black;
+
+  display: block;
+  padding: 35px 0 0 35px;
+  margin: 30px 20px 25px 30px;
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 27px;
+  letter-spacing: 0.02em;
+
+  position: relative;
+}
+
+.project-add-btn {
+  font-size: 50px;
+
+  right: 25px;
+  bottom: 5px;
+  position: absolute;
+}
+
+.popup-create-prjt{
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background-color: rgba(0,0,0, 0.5);
+
+}
+
+.create-prjt {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+  z-index: 9;
+
+  background-color: white;
+  width: 468px;
+  height: 310px;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-block;
+  padding: 46px 75px 0 70px;
+}
+
+.create-prjt h2 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.create-prjt form{
+  text-align: left;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.create-prjt label {
+  width: 100%;
+}
+.create-prjt input {
+  width: 100%;
+  margin: 8px 0 20px 0;
+  font-size: 13px;
+  padding: 5px 5px 6px 15px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+}
+input[type="submit"].create-prjt-submit {
+  font-size: 13px !important;
+  color: white;
+  width: 250px;
+  background-color: #FC6B6B;
+  border-radius: 30px;
+  cursor: pointer;
+  float: center;
+  margin: auto;
+  display: block;
+}
+#close-CreateProject{
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+  display: fixed;
+}

@@ -1,0 +1,45 @@
+.login{
+    display:flex;
+}
+.login-content{    
+    height: 100vh;
+    width: 30%;
+
+    display: table;
+
+    padding: 0 40px;
+
+    align-items: center;
+    text-align: center;
+}
+.login-content-fields{
+    display: table-cell;
+    vertical-align: middle;
+}
+.login-content-fields h3{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.login-display{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    width: 70%;
+    height:100vh;
+
+    background-color: white;
+    text-align: center
+}
+.login-display-helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.login-display-img{
+    vertical-align: middle;
+
+    margin: auto;
+    height: 80%;
+}

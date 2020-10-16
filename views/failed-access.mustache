@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="250039694980-rj02nk2mdr9iru0ohgfin3dsm78plt1o.apps.googleusercontent.com">
+</head>
+
+<body class="container">
+	<div class="row">
+		
+		<div class="col-md-6 col-md-offset-3" style="text-align:center;margin-bottom:48px">
+			
+			{{#client_log}}
+			<form method=POST action="/api/dashboard?client_log={{client_log}}&projectName={{projectName}}&displayDoc={{displayDoc}}">
+				Please provide your email (optional)
+				<input type="text" name="email"><br>
+				Please provide a temporary username (compulsory)
+				<input type="text" name="userName"><br>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			{{/client_log}}
+			{{^client_log}}                      
+        <a href="/" onclick="signOut();">Sign out</a>
+                          <script>
+                          function signOut() {
+                            var auth2 = gapi.auth2.getAuthInstance();
+                            auth2.signOut().then(function () {
+                            console.log('User signed out.');
+                            });
+                          }
+                          </script>
+        <p></p>
+        <a href="/?token="+id_token>Go to dashboard </a>
+
+			{{/client_log}}
+			<hr />
+			</div>
+			<div class="row">
+				
+	</div>
+
+
+  <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js.
+  NOTE: These should be minified in a build script -->
+  <!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+
+  <!-- For file uploading. Remove if file upload not necessry -->
+  <!-- <script type="text/javascript" src="/js/dropzone.js"></script>  -->
+
+  <!-- Turbo CDN. Better to use CDN than to store locally. -->
+  <!-- <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script> -->
+
+  <!-- Your app specific code -->
+  <!-- <script type="text/javascript" src="js/app.js"></script>  -->
+</body>
+</html>
