@@ -11,7 +11,16 @@ ________________________________________________________________________________
 
 If you would like to try using our product, follow the instructions below:
 
-After cloning into repo, cd to project root directory and create a .env file, as shown below:
+In your terminal, run:
+
+```
+git clone https://github.com/nicolenair/gather
+cd gather
+touch .env
+
+```
+
+In your new .env file, input the following information:
 
 ```
 TURBO_ENV=dev
