@@ -2,7 +2,7 @@
 
 <img src="https://github.com/nicolenair/gather/blob/master/Screen%20Shot%202020-10-17%20at%2004.20.10.png" alt="drawing" width="500"/>
 
-This website was produced by a team of students from Minerva Schools at KGI. Chris Hagan designed the site, Qiusu Wang was our project manager, Alexander Wu coded up the frontend, and I, Nicole Nair wrote the backend. It is an all-in-one design feedback platform, which allows freelance designers and clients to collaborate without the inconvenience of switching between various media (email, IM, etc.). Freelancers simply upload their designs, and clients can comment directly on the photo. 
+This website was produced by a team of students from Minerva Schools at KGI. Chris Hagan designed the site, Qiusu Wang was our project manager, Alexander Wu coded up the frontend, and I, Nicole Nair wrote the backend. It is an all-in-one design feedback platform, which allows freelance designers and clients to collaborate without the inconvenience of repeatedly switching between various media (email, IM, etc.). Freelancers simply upload their designs, and clients can comment directly on the photo. 
 
 
 This project was built with Turbo 360. To learn more, click here: https://www.turbo360.co
