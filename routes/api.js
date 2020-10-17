@@ -550,7 +550,7 @@ router.get("/project-pictures", (req, res) => {
               profilepic: picture,
             });
             var params = {
-              Bucket: "test-s3-nicole",
+              Bucket: process.env.BUCKET_NAME,
               Fields: { key: makeid(5), acl: "public-read" },
             };
             s3.createPresignedPost(params, function (err, data2) {
