@@ -68,4 +68,4 @@ To build for production, run build:
 ```
 $ npm run build
 ``` 
-
+Note: hosting/deployment via Turbo may have been affected by the recent AWS Lambda discontinuation of support for Node 8.x. The development server should work totally fine. 
