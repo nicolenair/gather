@@ -43,6 +43,8 @@ This file requires a TURBO_APP_ID and SESSION_SECRET keys, which you can get for
 
 If you are new to AWS, please read up on S3 best practices here: https://docs.aws.amazon.com/AmazonS3/latest/dev/security-best-practices.html
 
+Do remember to appropriately configure CORS & policies for your S3 bucket. Helpful links: https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html, https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/#:~:text=IAM%20policies%20vs.-,S3%20bucket%20policies,the%20permissions%20you've%20defined.
+
 Then run npm install from the root directory:
 
 ```
