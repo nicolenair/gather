@@ -61,9 +61,11 @@ Then run devserver from project root directory:
 $ turbo devserver
 ```
 
+Once you run turbo devserver, you can use and navigate & use the app at localhost:3000
+
 To build for production, run build:
 
 ```
 $ npm run build
-```
-
+``` 
+Note: hosting/deployment via Turbo may be affected by the recent AWS Lambda discontinuation of support for Node 8.x. The development server should work totally fine. 
