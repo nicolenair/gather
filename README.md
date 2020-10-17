@@ -71,8 +71,4 @@ To build for production, run build:
 $ npm run build
 ``` 
 
-To deploy the app, run:
-```
-$ turbo deploy
-``` 
-Note: turbo devserver (the development server) functions perfectly, but be careful with "turbo deploy" — this package is a little outdated.
+Note: for the moment, please use the development server (turbo devserver). This app was deployed & hosted on Turbo in 2019, but due to package updates in the past year, "turbo deploy" is functional but buggy, and I am working to fix it. 
