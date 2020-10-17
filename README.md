@@ -75,3 +75,4 @@ To deploy the app, run:
 ```
 $ turbo deploy
 ``` 
+Note: turbo devserver (the development server) functions perfectly, but be careful with "turbo deploy" — this package is a little outdated.
