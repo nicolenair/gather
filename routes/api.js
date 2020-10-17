@@ -78,7 +78,10 @@ router.get("/update-project-documents", (req, res) => {
   query = req.query;
   document = {
     projectDocLink:
-      "https://test-s3-nicole.s3.us-west-2.amazonaws.com/" + query["key"],
+      "https://" +
+      process.env.BUCKET_NAME +
+      ".s3.us-west-2.amazonaws.com/" +
+      query["key"],
     lastEdited: Date(Date.now()).toString(),
     projectDocKey: query["key"],
   };
