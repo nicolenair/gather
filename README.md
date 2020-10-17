@@ -39,7 +39,7 @@ TURBO_APP_SLUG=
 TMP_DIR=/tmp
 
 ```
-This file requires a TURBO_APP_ID and SESSION_SECRET keys, which you can get for free on https://www.turbo360.co. You will also need an AWS API key & secret (we only use this to upload S3 files), as well as a free MongoDB URI (which you can either get locally or via MongoDB Atlas). We use Google Sign-In for authentication, so do obtain a free client ID. 
+This file requires a TURBO_APP_ID and SESSION_SECRET keys, which you can get for free on https://www.turbo360.co. You will also need an AWS API key & secret (we only use this to upload S3 files), as well as a free MongoDB URI (which you can either get locally or via MongoDB Atlas). We use Google Sign-In for authentication, so do obtain a free client ID. Do remember to also include the client ID in Login.js, ProjectPage.js, and ProjectDash.js. 
 
 If you are new to AWS, please read up on S3 best practices here: https://docs.aws.amazon.com/AmazonS3/latest/dev/security-best-practices.html
 
